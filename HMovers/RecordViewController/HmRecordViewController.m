@@ -38,13 +38,13 @@
     [super viewDidLoad];
     TitleView(@"Record");
     self.bgview = [[UIView alloc]initWithFrame:CGRectMake(30, 150, WIDTH -60, 300)];
-    self.bgview .backgroundColor = [UIColor clearColor];
+    self.bgview .backgroundColor = [UIColor whiteColor];
     self.bgview.hidden = YES;
     UIImageView * image = [[UIImageView alloc]initWithFrame:CGRectMake((WIDTH -60 -200)/2, 0, 200, 175)];
     image.image = [UIImage imageNamed:@"not"];
     UIButton * addto = [UIButton buttonWithType:UIButtonTypeCustom];
     addto.frame = CGRectMake(0, 230, WIDTH-60, 40);
-    addto.backgroundColor = [UIColor clearColor];
+    addto.backgroundColor = [UIColor whiteColor];
     addto.layer.cornerRadius = 6.f;
     addto.layer.masksToBounds = YES;
     [addto setTitle:@"There is no order" forState:UIControlStateNormal];
@@ -65,6 +65,7 @@
                                              style:UITableViewStyleGrouped];
     _tableView.dataSource=self;
     _tableView.delegate =self;
+    _tableView.backgroundColor = [UIColor whiteColor];
     UIView * view =[[UIView alloc]init];
     _tableView.tableFooterView =view;
     [_tableView registerNib:[UINib nibWithNibName:@"HmOrderTableViewCell" bundle:nil] forCellReuseIdentifier:[HmOrderTableViewCell reuseIdentifier]];

@@ -17,7 +17,7 @@
     _backGView = backgroundView;
     backgroundView.layer.borderWidth = 0.5f;
     if (@available(iOS 13.0, *)) {
-        backgroundView.layer.borderColor = [UIColor systemGroupedBackgroundColor].CGColor;
+        backgroundView.layer.borderColor = [UIColor whiteColor].CGColor;
     } else {
         // Fallback on earlier versions
     }

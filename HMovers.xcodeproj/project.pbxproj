@@ -228,7 +228,6 @@
 		0FF476E22665C88F00BCE863 /* HmMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF476E02665C88F00BCE863 /* HmMainViewController.m */; };
 		0FF476E32665C88F00BCE863 /* HmMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF476E12665C88F00BCE863 /* HmMainViewController.xib */; };
 		0FF476E82665C8B800BCE863 /* HmClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF476E62665C8B800BCE863 /* HmClassViewController.m */; };
-		0FF476E92665C8B800BCE863 /* HmClassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF476E72665C8B800BCE863 /* HmClassViewController.xib */; };
 		0FF476EE2665C8D700BCE863 /* HmGoodDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF476EC2665C8D700BCE863 /* HmGoodDetailsViewController.m */; };
 		0FF476EF2665C8D700BCE863 /* HmGoodDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF476ED2665C8D700BCE863 /* HmGoodDetailsViewController.xib */; };
 		0FF476F42665CEDB00BCE863 /* HmRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF476F22665CEDB00BCE863 /* HmRecordViewController.m */; };
@@ -442,7 +441,6 @@
 		0FF476E12665C88F00BCE863 /* HmMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HmMainViewController.xib; sourceTree = "<group>"; };
 		0FF476E52665C8B800BCE863 /* HmClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HmClassViewController.h; sourceTree = "<group>"; };
 		0FF476E62665C8B800BCE863 /* HmClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HmClassViewController.m; sourceTree = "<group>"; };
-		0FF476E72665C8B800BCE863 /* HmClassViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HmClassViewController.xib; sourceTree = "<group>"; };
 		0FF476EB2665C8D700BCE863 /* HmGoodDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HmGoodDetailsViewController.h; sourceTree = "<group>"; };
 		0FF476EC2665C8D700BCE863 /* HmGoodDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HmGoodDetailsViewController.m; sourceTree = "<group>"; };
 		0FF476ED2665C8D700BCE863 /* HmGoodDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HmGoodDetailsViewController.xib; sourceTree = "<group>"; };
@@ -885,7 +883,6 @@
 			children = (
 				0FF476E52665C8B800BCE863 /* HmClassViewController.h */,
 				0FF476E62665C8B800BCE863 /* HmClassViewController.m */,
-				0FF476E72665C8B800BCE863 /* HmClassViewController.xib */,
 			);
 			path = ClassViewController;
 			sourceTree = "<group>";
@@ -1103,7 +1100,6 @@
 				0FF476D02665C52E00BCE863 /* HmCenterViewController.xib in Resources */,
 				0FF4769A2665BD5100BCE863 /* LaunchScreen.storyboard in Resources */,
 				0FF476972665BD5100BCE863 /* Assets.xcassets in Resources */,
-				0FF476E92665C8B800BCE863 /* HmClassViewController.xib in Resources */,
 				0FF476DD2665C64D00BCE863 /* HmFeedBackViewController.xib in Resources */,
 				0FF476F52665CEDB00BCE863 /* HmRecordViewController.xib in Resources */,
 				0F04008B2665F3DB007416C9 /* MyCenterCollectionReusableView.xib in Resources */,
@@ -1528,7 +1524,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HMovers/HMovers.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = ZSX2XMADGY;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = /Users/a66/Desktop/HMovers/HMovers/PrefixHeader.pch;
@@ -1551,7 +1547,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HMovers/HMovers.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = ZSX2XMADGY;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = /Users/a66/Desktop/HMovers/HMovers/PrefixHeader.pch;

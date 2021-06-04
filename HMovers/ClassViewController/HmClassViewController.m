@@ -20,7 +20,7 @@
     [super viewDidLoad];
     TitleView(@"Classification");
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithIcon:@"back" target:self action:@selector(back)];
-    self.view.backgroundColor =[UIColor groupTableViewBackgroundColor];
+    self.view.backgroundColor =[UIColor whiteColor];
     [self creatCollectionView];
 }
 -(void)back{
@@ -32,7 +32,7 @@
     _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0,0, WIDTH, HEIGHT) collectionViewLayout:layout];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
-    _collectionView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    _collectionView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_collectionView];
     _collectionView.showsVerticalScrollIndicator = NO;
     [_collectionView registerNib:[UINib nibWithNibName:@"MyCentersCViewCell" bundle:nil] forCellWithReuseIdentifier:@"MyCentersCViewCell"];
@@ -79,7 +79,7 @@
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
         MyCenterCollectionReusableView * heardView = [_collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"MyCenterCollectionReusableView" forIndexPath:indexPath];
-        heardView.backgroundColor =[UIColor groupTableViewBackgroundColor];
+        heardView.backgroundColor =[UIColor whiteColor];
         for (UIView * view in heardView.subviews) {
             [view removeFromSuperview];
         }

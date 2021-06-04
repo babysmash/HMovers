@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataArray = @[ @{@"image":@"o_i_1",@"number":@"0"}, @{@"image":@"re_i_3",@"number":@"0"}, @{@"image":@"o_i_3",@"number":@"0"}, @{@"image":@"w_i_2",@"number":@"0"}, @{@"image":@"re_i_4",@"number":@"0"}, @{@"image":@"o_i_5",@"number":@"0"}];
-    self.view.backgroundColor =[UIColor groupTableViewBackgroundColor];
+    self.view.backgroundColor =[UIColor whiteColor];
     [self creatCollectionView];
 }
 -(void)creatCollectionView {
@@ -34,7 +34,7 @@
     _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0,-SH_StatusBarHeight, WIDTH, HEIGHT-SH_TabBarHeight+SH_StatusBarHeight) collectionViewLayout:layout];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
-    _collectionView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    _collectionView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_collectionView];
     _collectionView.showsVerticalScrollIndicator = NO;
     [_collectionView registerNib:[UINib nibWithNibName:@"MyCentersCViewCell" bundle:nil] forCellWithReuseIdentifier:@"MyCentersCViewCell"];
@@ -45,6 +45,7 @@
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return self.dataArray.count;
+    
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     NSDictionary * dic = _dataArray[indexPath.row];
@@ -90,9 +91,9 @@
         }
         NSArray * array = @[@"banner",@"m_banner"];
         SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0,0, WIDTH, 200) delegate:self placeholderImage:[UIImage imageNamed:@"banner"]];
-        cycleScrollView.backgroundColor =Color(229, 229, 229);
+        cycleScrollView.backgroundColor =Color(255, 254, 248);
         cycleScrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentCenter;
-        cycleScrollView.currentPageDotColor = [UIColor blackColor];
+        cycleScrollView.currentPageDotColor = [UIColor whiteColor];
         [heardView addSubview:cycleScrollView];
         cycleScrollView.type = @"normal";
         cycleScrollView.localizationImageNamesGroup = array;
@@ -110,7 +111,7 @@
             UIButton * btn  = [UIButton buttonWithType:UIButtonTypeCustom];
             btn.frame = CGRectMake(brand+ brand*(i%2)+150*(i%2), 250 + 100*(i/2)+ 20
                                    * (i/2), 150, 100);
-            btn.backgroundColor = [UIColor clearColor];
+            btn.backgroundColor = [UIColor whiteColor];
             btn.tag = 100+i;
             [btn setBackgroundImage:[UIImage imageNamed:brandArray[i]] forState:UIControlStateNormal];
             [btn addTarget:self action:@selector(brandClick:) forControlEvents:UIControlEventTouchUpInside];
